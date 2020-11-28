@@ -6,6 +6,6 @@ const ordered = 50;
 if (total >= ordered) {
     console.log('Заказ оформлен, с вами свяжется менеджер.');
 }
-if (total < ordered) {
+else {
     console.log('На складе недостаточно твоаров!');
 }
