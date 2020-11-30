@@ -4,13 +4,14 @@ let total = 0;
 let input;
 do {
   input = prompt('Введите число');
-  
-  if (input === null) {
-    break;
-  }
 
-  input = Number(input);
-  total += input;
+  if (isNaN(input)) {
+    alert('Вы ввели не число');
+  }
+  else {
+    total += Number(input);
+  }
 }
-while (input !== 0);
-alert(`Общая сумма чисел равна ${total}`);
+while (input !== null);
+  alert(`Общая сумма чисел равна ${total}`);
+  
