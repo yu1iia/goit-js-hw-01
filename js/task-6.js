@@ -13,5 +13,5 @@ do {
   }
 }
 while (input !== null);
-  alert(`Общая сумма чисел равна ${total}`);
+alert(`Общая сумма чисел равна ${total}`);
   
