@@ -5,15 +5,10 @@ let message;
 const answer = prompt('Введите пароль');
 
 if (answer === ADMIN_PASSWORD) {
-    message = 'Добро пожаловать!';
+  message = 'Добро пожаловать!';
+} else if (answer == null) {
+  message = 'Отменено пользователем!';
+} else {
+  message = 'Доступ запрещен, неверный пароль!';
 }
-else if (answer == null){
-    message = 'Отменено пользователем!';
-} 
-else {
-    message = 'Доступ запрещен, неверный пароль!';
-} 
 alert(message);
-
-
-
